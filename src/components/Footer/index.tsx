@@ -1,9 +1,14 @@
 import { Container, Wrapper } from './styles'
 
+import { escoEdit } from '../../escoEdit'
+import { EditorsList } from '../editoresList'
+
 export function Footer() {
   return (
     <Wrapper>
-      <Container>Header</Container>
+      <Container>
+        <EditorsList escoEdit={escoEdit} />
+      </Container>
     </Wrapper>
   )
 }

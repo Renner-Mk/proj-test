@@ -10,3 +10,9 @@ export const Container = styled.div`
   width: 1250px;
   padding: 0 25px;
 `
+export const FormContainer = styled.div`
+  width: 736px;
+  height: 12.745rem;
+  margin: 50px auto;
+  background-color: white;
+`
