@@ -2,18 +2,15 @@ import { RouterProvider } from 'react-router-dom'
 
 import { router } from './router'
 
-import { ThemeProvider } from 'styled-components'
-
 import GlobalStyle from './styles/global'
 
-// import light from "./themes/light";
-import dark from './themes/dark'
+import { ThemeContextProvider } from './context/ThemeChange'
 
 export function App() {
   return (
-    <ThemeProvider theme={dark}>
+    <ThemeContextProvider>
       <GlobalStyle />
       <RouterProvider router={router} />
-    </ThemeProvider>
+    </ThemeContextProvider>
   )
 }

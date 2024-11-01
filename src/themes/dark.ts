@@ -1,4 +1,6 @@
-export default {
+import { DefaultTheme } from "styled-components";
+
+export const darkTheme: DefaultTheme = {
   title: 'dark',
   colors: {
     primary: '#f3726c',

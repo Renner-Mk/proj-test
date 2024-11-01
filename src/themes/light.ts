@@ -1,4 +1,6 @@
-export default {
+import { DefaultTheme } from "styled-components/dist/types";
+
+export const lightTheme: DefaultTheme = {
   title: 'light',
   colors: {
     primary: '#f3726c',

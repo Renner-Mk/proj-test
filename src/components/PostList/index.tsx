@@ -26,7 +26,7 @@ export function PostList({ posts }: PostProps) {
 
       <Posts>
         {posts.map((post) => (
-          <Post post={post} />
+          <Post key={post.title} post={post} />
         ))}
       </Posts>
     </>
